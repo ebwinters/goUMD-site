@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 const About = () => (
-  <div style={{height: '400px', backgroundColor: '#FFD200', fontWeight: 'lighter'}}>
+  <div style={{height: '600px', backgroundColor: '#FFD200', fontWeight: 'lighter'}}>
     <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
       We thought the current situation was... lacking
     </h2>
