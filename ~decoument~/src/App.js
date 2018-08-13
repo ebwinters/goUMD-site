@@ -27,7 +27,20 @@ const About = () => (
 
   </div>
 )
+const Disclaimer = () => (
+  <div style={{height: '600px', backgroundColor: 'black', color: 'white', fontWeight: 'lighter'}}>
+    <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
+      "Any reliance you place on such information is therefore strictly at your own risk"
+    </h2>
+    <p>
+The information contained in this website is for general information purposes only. The information is provided by goUMD and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website and app, or the information, products, services, or related graphics contained on the website or app for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
 
+In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website/app.
+
+Through this website you are able to link to other websites which are not under the control of goUMD. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+
+  </div>
+)
 class App extends Component {
   constructor(props) {
     super(props);
@@ -44,13 +57,15 @@ class App extends Component {
       <div className="App">
         <img src={logo3} style={{height: '400px'}}/>
         <h2 style={{fontSize: '30px', fontWeight: 'lighter', paddingBottom: '15px'}}>
-          Pick your destination. Get the fastest route. Enjoy the ride.
+          Pick your destination. Get the fastest route. Go.
         </h2>
         <div style={{display: 'inline'}}>
           <Link to="/about"><Button onClick={() => this.toggle()} className="goButton">Motivation</Button></Link>
-          <a href="https://itunes.apple.com/us/genre/ios/id36?mt=8" target="_blank"><Button className="goButton">App Store</Button></a>
+          <Link to="/disclaimer"><Button onClick={() => this.toggle()} className="goButton">Disclaimer</Button></Link>
+          <a href="https://itunes.apple.com/us/app/goumd/id1414933374?ls=1&mt=8" target="_blank"><Button className="goButton">App Store</Button></a>
         </div>
       <Route path="/about" component={About} />
+      <Route path="/disclaimer" component={Disclaimer} />
       </div>
       </Router>
     );
