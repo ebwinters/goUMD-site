@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 const About = () => (
-  <div style={{height: 'auto', backgroundColor: '#FFD200', fontWeight: 'lighter'}}>
+  <div style={{height: '100%', backgroundColor: '#FFD200', fontWeight: 'lighter'}}>
     <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
       We thought the current situation was... lacking
     </h2>
@@ -28,7 +28,7 @@ const About = () => (
   </div>
 )
 const Disclaimer = () => (
-  <div style={{height: 'inherit', backgroundColor: 'black', color: 'white', fontWeight: 'lighter'}}>
+  <div style={{height: '100%', backgroundColor: 'black', color: 'white', fontWeight: 'lighter'}}>
     <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
       "Any reliance you place on such information is therefore strictly at your own risk"
     </h2>
