@@ -22,7 +22,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "echo hi"
+      "pre-push": "yarn build && surge --project /Users/Ethan/Desktop/goUMD-site/~decoument~/build/ --domain goumd-app.surge.sh"
     }
   }
 }
