@@ -42,8 +42,19 @@ Through this website you are able to link to other websites which are not under 
 )
 
 const comingSoon = () => (
-    <div style={{height: '100%', backgroundColor: 'blue', color: 'white', fontWeight: 'lighter'}}>
-        <h2>HI</h2>
+    <div style={{height: '100%', backgroundColor: "#FFD200", color: 'black', fontWeight: 'lighter'}}>
+        <h1 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
+            Android Release Date: 1/28/19
+        </h1>
+        <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
+          New Features:
+        </h2>
+        <p>
+            Reliability - Never worry about missing a bus due to slow load times <br></br> <br></br>
+            Full Schedule - See the full bus schedule for any route and any stop you want <br></br> <br></br>
+            Commuter Route Support - GoUMD will support all campus and commuter bus routes <br></br> <br></br>
+            Favorites - Support for saving route preferences for quick reference <br></br> <br></br>
+        </p>
     </div>
 )
 
@@ -69,6 +80,7 @@ class App extends Component {
           <Link to="/about"><Button onClick={() => this.toggle()} className="goButton">Motivation</Button></Link>
           <Link to="/disclaimer"><Button onClick={() => this.toggle()} className="goButton">Disclaimer</Button></Link>
           <a href="https://itunes.apple.com/us/app/goumd/id1414933374?ls=1&mt=8" target="_blank"><Button style={{marginTop: '15px'}} className="goButton">App Store</Button></a>
+          <Link to="/comingSoon"><Button onClick={() => this.toggle()} className="goButton">New Features</Button></Link>
         </div>
       <Route path="/about" component={About} />
       <Route path="/disclaimer" component={Disclaimer} />
