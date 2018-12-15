@@ -40,6 +40,13 @@ In no event will we be liable for any loss or damage including without limitatio
 Through this website you are able to link to other websites which are not under the control of goUMD. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
   </div>
 )
+
+const comingSoon = () => (
+    <div style={{height: '100%', backgroundColor: 'blue', color: 'white', fontWeight: 'lighter'}}>
+        <h2>HI</h2>
+    </div>
+)
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -52,7 +59,7 @@ class App extends Component {
   }
   render() {
     return (
-      <Router>     
+      <Router>
       <div className="App">
         <img src={logo3} style={{height: '400px'}}/>
         <h2 style={{fontSize: '30px', fontWeight: 'lighter', paddingBottom: '15px'}}>
@@ -65,6 +72,7 @@ class App extends Component {
         </div>
       <Route path="/about" component={About} />
       <Route path="/disclaimer" component={Disclaimer} />
+      <Route path="/comingSoon" component={comingSoon} />
       </div>
       </Router>
     );

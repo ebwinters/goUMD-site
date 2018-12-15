@@ -23,12 +23,3 @@ const Button = styled.button`
 `;
 
 export {Button}
-
-// export default class Welcome extends React.Component {
-//   render() {
-//     return (
-//       <button>HI</button>
-//     );
-//   }
-// }
-
