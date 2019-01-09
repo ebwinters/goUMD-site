@@ -58,6 +58,28 @@ const comingSoon = () => (
     </div>
 )
 
+const attributions = () => (
+    <div style={{height: '100%', backgroundColor: 'black', color: 'white', fontWeight: 'lighter'}}>
+        <h1 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
+            Attributions & Creative Commons Credits
+        </h1>
+        <h2 style={{paddingTop: '20px', fontWeight: 'lighter'}}>
+          Bus Icon
+        </h2>
+        <p>
+            The bus icon used in the maps feature was taken from Eucalyp Studio on iconfinder.com. I adaped the logo to add color. <br></br>
+        All credit for this icon logo goes to Eucalyp Studio. The creative commons license can be found <a style={{color: 'white'}} href="https://creativecommons.org/licenses/by/3.0/"> here. </a>
+        </p>
+        <h2 style={{paddingTop: '20px', fontWeight: 'lighter'}}>
+          Stop Icon
+        </h2>
+        <p>
+            The stop icon used in the maps feature was taken from Stefan Taubert on iconfinder.com. I dit not adapt the logo in any way. <br></br>
+        All credit for this icon logo goes to Stefan Taubert. The creative commons license can be found <a style={{color: 'white'}} href="https://creativecommons.org/licenses/by/3.0/"> here. </a>
+        </p>
+    </div>
+)
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -81,10 +103,12 @@ class App extends Component {
           <Link to="/disclaimer"><Button onClick={() => this.toggle()} className="goButton">Disclaimer</Button></Link>
           <a href="https://itunes.apple.com/us/app/goumd/id1414933374?ls=1&mt=8" target="_blank"><Button style={{marginTop: '15px'}} className="goButton">App Store</Button></a>
           <Link to="/comingSoon"><Button onClick={() => this.toggle()} className="goButton">New Features</Button></Link>
+          <Link to="/attributions"><Button onClick={() => this.toggle()} className="goButton">Attributions</Button></Link>
         </div>
       <Route path="/about" component={About} />
       <Route path="/disclaimer" component={Disclaimer} />
       <Route path="/comingSoon" component={comingSoon} />
+      <Route path="/attributions" component={attributions} />
       </div>
       </Router>
     );
