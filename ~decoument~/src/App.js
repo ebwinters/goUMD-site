@@ -102,8 +102,8 @@ class App extends Component {
           <Link to="/about"><Button onClick={() => this.toggle()} className="goButton">Motivation</Button></Link>
           <Link to="/disclaimer"><Button onClick={() => this.toggle()} className="goButton">Disclaimer</Button></Link>
           <a href="https://itunes.apple.com/us/app/goumd/id1414933374?ls=1&mt=8" target="_blank"><Button style={{marginTop: '15px'}} className="goButton">App Store</Button></a>
-          <Link to="/comingSoon"><Button onClick={() => this.toggle()} className="goButton">New Features</Button></Link>
-          <Link to="/attributions"><Button onClick={() => this.toggle()} className="goButton">Attributions</Button></Link>
+          <Link to="/comingSoon"><Button style={{marginTop: '15px'}} onClick={() => this.toggle()} className="goButton">New Features</Button></Link>
+          <Link to="/attributions"><Button style={{marginTop: '15px'}} onClick={() => this.toggle()} className="goButton">Attributions</Button></Link>
         </div>
       <Route path="/about" component={About} />
       <Route path="/disclaimer" component={Disclaimer} />
