@@ -44,7 +44,7 @@ Through this website you are able to link to other websites which are not under 
 const comingSoon = () => (
     <div style={{height: '100%', backgroundColor: "#FFD200", color: 'black', fontWeight: 'lighter'}}>
         <h1 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
-            Android Release Date: 1/28/19
+            Android Release Date: 1/14/19
         </h1>
         <h2 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
           New Features:
@@ -53,7 +53,7 @@ const comingSoon = () => (
             Reliability - Never worry about missing a bus due to slow load times <br></br> <br></br>
             Full Schedule - See the full bus schedule for any route and any stop you want <br></br> <br></br>
             Commuter Route Support - GoUMD will support all campus and commuter bus routes <br></br> <br></br>
-            Favorites - Support for saving route preferences for quick reference <br></br> <br></br>
+            New UI - A brand new user interface that's sleek, responsive, and informative <br></br> <br></br>
         </p>
     </div>
 )
