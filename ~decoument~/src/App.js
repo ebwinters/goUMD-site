@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import logo3 from './logo3.png';
+import logo4 from './logo4.png';
 import './App.css';
 import {Button} from './components/goUMDButton';
 import {
