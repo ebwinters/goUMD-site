@@ -86,7 +86,7 @@ const privacyPolicy = () => (
 const attributions = () => (
     <div style={{height: '100%', backgroundColor: 'black', color: 'white', fontWeight: 'lighter'}}>
         <h1 style={{paddingTop: '40px', fontWeight: 'lighter'}}>
-            Attributions & Creative Commons Credits
+            Attributions & Creative Commons Crenits
         </h1>
         <h2 style={{paddingTop: '20px', fontWeight: 'lighter'}}>
           Bus Icon
@@ -99,7 +99,7 @@ const attributions = () => (
           Stop Icon
         </h2>
         <p>
-            The stop icon used in the maps feature was taken from Stefan Taubert on iconfinder.com. I dit not adapt the logo in any way. <br></br>
+            The stop icon used in the maps feature was taken from Stefan Taubert on iconfinder.com. I did not adapt the logo in any way. <br></br>
         All credit for this icon logo goes to Stefan Taubert. The creative commons license can be found <a style={{color: 'white'}} href="https://creativecommons.org/licenses/by/3.0/"> here. </a>
         </p>
     </div>
